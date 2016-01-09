@@ -14,4 +14,4 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 call vundle#end()            " required
 filetype plugin indent on    " required
-
+set omnifunc=htmlcomplete#CompleteTags
