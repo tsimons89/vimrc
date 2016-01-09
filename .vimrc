@@ -2,7 +2,7 @@ syntax on
 filetype plugin indent on
 
 "Show statusbar
-set laststaus=2
+set laststatus=2
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
