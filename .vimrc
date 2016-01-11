@@ -14,6 +14,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 Bundle 'tpope/vim-vinegar'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'scrooloose/syntastic'
+Plugin 'mattn/emmet-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
@@ -22,7 +24,7 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 
 "Set color scheme to desert
-colorscheme desert
+colorscheme delek 
 
 
 "To set the relatice line number with the current line number
@@ -44,3 +46,12 @@ if &term =~ "xterm"
                                  endif
                                  endif
 
+"Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
