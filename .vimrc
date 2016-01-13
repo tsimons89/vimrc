@@ -7,6 +7,8 @@ set laststatus=2
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" Map the escape key to jj
+inoremap jj <Esc>
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -55,3 +57,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_css_checkers=['prettycss']
+
+"Set spell check
+set spell spelllang=en_us
