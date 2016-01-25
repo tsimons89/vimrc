@@ -2,7 +2,7 @@ syntax on
 filetype plugin indent on
 set nowrap
 
-"Show statusbar
+"Show status bar
 set laststatus=2
 
 set nocompatible              " be iMproved, required
@@ -19,6 +19,7 @@ Bundle 'tpope/vim-vinegar'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
+Bundle 'Valloric/YouCompleteMe'
 call vundle#end()            " required
 filetype plugin indent on    " required
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
@@ -27,10 +28,10 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 
 "Set color scheme to desert
-colorscheme delek 
+colorscheme desert
 
 
-"To set the relatice line number with the current line number
+"To set the relative line number with the current line number
 set relativenumber
 set number
 
@@ -59,6 +60,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_css_checkers=['prettycss']
+let g:syntastic_cpp_checkers=['gcc']
+let g:syntastic_c_checkers=['gcc']
 
 "Set spell check
 set spell spelllang=en_us
