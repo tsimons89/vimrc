@@ -17,6 +17,10 @@ inoremap jj <Esc>
 "Remap the Man command to Shift-K
 nnoremap K :Man <cword> 
 
+"Swap H and L (to top and bottom of page)
+noremap H L
+noremap L H
+
 "Close braces on the next line
 inoremap {<CR> {<CR><CR>}<Up><C-T>
 " set the runtime path to include Vundle and initialize
@@ -28,7 +32,6 @@ Bundle 'tpope/vim-vinegar'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
-Bundle 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-unimpaired'
 call vundle#end()            " required
 filetype plugin indent on    " required
