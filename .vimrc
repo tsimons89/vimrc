@@ -17,9 +17,11 @@ inoremap jj <Esc>
 "Remap the Man command to Shift-K
 nnoremap K :Man <cword> 
 
-"Swap H and L (to top and bottom of page)
-noremap H L
-noremap L H
+"Remap the Man command to Shift-K
+nnoremap KK :Man -k  
+
+"Set tabs to be 4 spaces
+set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 "Close braces on the next line
 inoremap {<CR> {<CR><CR>}<Up><C-T>
